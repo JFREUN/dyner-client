@@ -5,7 +5,6 @@ import { useState, useEffect, useContext } from "react";
 import { AuthContext } from "./../context/auth.context";
 import service from "../api/service";
 import "../css/styles.css";
-import recipeImage from "../images/recipe-illustration.png";
 
 const API_URL = process.env.REACT_APP_API_URL || "https://jealous-blue-pocketbook.cyclic.app";
 
@@ -40,6 +39,7 @@ export default function EditRecipe() {
         setCookingTime(oneRecipe.cookingTime);
       })
       .catch((error) => console.log(error));
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -53,7 +53,7 @@ export default function EditRecipe() {
         })
         .catch((err) => console.log("This is a search error:", err));
     }
-  }, [search]);
+  },[search,storedToken]);
 
   const handleFileUpload = (e) => {
 

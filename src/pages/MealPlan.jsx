@@ -46,6 +46,7 @@ export default function MealPlan() {
 
   useEffect(() => {
     getMeals();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -66,6 +67,7 @@ export default function MealPlan() {
       console.log(days);
       setDays(updatedDays);
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [meals]);
 
   const handleDelete = (mealId) => {

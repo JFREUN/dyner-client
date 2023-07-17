@@ -28,6 +28,7 @@ function RecipeDetail(props) {
 
   useEffect(() => {
     getRecipe();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

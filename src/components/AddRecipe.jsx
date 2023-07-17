@@ -41,7 +41,7 @@ export default function AddRecipe({ refreshRecipes, showForm }) {
       })
       .catch((err) => console.log("This is a search error:", err));
     }
-  }, [search]);
+  }, [search,storedToken]);
 
   const handleFileUpload = (e) => {
     const uploadData = new FormData();

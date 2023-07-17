@@ -44,7 +44,7 @@ export default function AddMeal(props) {
         setDinner(oneMeal.dinner);
       })
       .catch((error) => console.log(error));
-  }, [mealId]);
+  }, [mealId,storedToken]);
 
   const handleSubmit = (e) => {
     e.preventDefault();

@@ -71,7 +71,7 @@ export default function AddMeal(props) {
         })
         .catch((err) => console.log(err));
     }
-  }, [breakfastSearch]);
+  }, [breakfastSearch, storedToken]);
 
   useEffect(() => {
     if (lunchSearch) {
@@ -84,7 +84,7 @@ export default function AddMeal(props) {
         })
         .catch((err) => console.log(err));
     }
-  }, [lunchSearch]);
+  }, [lunchSearch, storedToken]);
 
   useEffect(() => {
     if (dinnerSearch) {
@@ -97,7 +97,7 @@ export default function AddMeal(props) {
         })
         .catch((err) => console.log(err));
     }
-  }, [dinnerSearch]);
+  }, [dinnerSearch,storedToken]);
 
   return (
     <div>

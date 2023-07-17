@@ -39,9 +39,11 @@ const createRecipe = (newRecipe) => {
     .then(res => res.data)
     .catch(errorHandler);
 };
- 
-export default {
+
+const service = {
   getRecipes,
   uploadImage,
   createRecipe,
-};
+}
+ 
+export default service;

@@ -13,7 +13,6 @@ const API_URL = process.env.REACT_APP_API_URL || "https://jealous-blue-pocketboo
 
 export default function FridgePage() {
   const [ingredients, setIngredients] = useState([]);
-  const [inStock, setInStock] = useState(true);
   const [show, setShow] = useState(false);
 
   const storedToken = localStorage.getItem("authToken");
@@ -35,6 +34,7 @@ export default function FridgePage() {
 
   useEffect(() => {
     refreshIngredients();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleInstock = (id) => {
