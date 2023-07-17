@@ -7,7 +7,7 @@ import "../css/styles.css";
 import burger from "../images/Burger.png";
 
 
-const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5005";
+const API_URL = process.env.REACT_APP_API_URL || "https://jealous-blue-pocketbook.cyclic.app";
 
 export default function AddMeal(props) {
   const [day, setDay] = useState("");

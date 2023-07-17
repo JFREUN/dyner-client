@@ -6,7 +6,7 @@ const api = axios.create({
   // make sure you use PORT = 5005 (the port where our server is running)
 
 
-    baseURL: process.env.REACT_APP_API_URL || "http://localhost:5005"
+    baseURL: process.env.REACT_APP_API_URL || "https://jealous-blue-pocketbook.cyclic.app"
 
 
   // withCredentials: true // => you might need this option if using cookies and sessions

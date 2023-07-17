@@ -7,7 +7,7 @@ import service from "../api/service";
 import "../css/styles.css";
 import recipeImage from "../images/recipe-illustration.png";
 
-const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5005";
+const API_URL = process.env.REACT_APP_API_URL || "https://jealous-blue-pocketbook.cyclic.app";
 
 export default function EditRecipe() {
   const [name, setName] = useState("");

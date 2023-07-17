@@ -5,7 +5,7 @@ import { AuthContext } from "./../context/auth.context";
 import axios from "axios";
 import recipeImage from "../images/Pizza.svg";
 
-const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5005";
+const API_URL = process.env.REACT_APP_API_URL || "https://jealous-blue-pocketbook.cyclic.app";
 
 export default function AddRecipe({ refreshRecipes, showForm }) {
   const [name, setName] = useState("");

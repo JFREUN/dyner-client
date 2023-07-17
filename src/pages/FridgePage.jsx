@@ -9,7 +9,7 @@ import ShoppingList from "../components/ShoppingList";
 import saladIcon from "../images/Salad.svg";
 import breakfastIcon from "../images/Breakfast.png";
 
-const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5005";
+const API_URL = process.env.REACT_APP_API_URL || "https://jealous-blue-pocketbook.cyclic.app";
 
 export default function FridgePage() {
   const [ingredients, setIngredients] = useState([]);

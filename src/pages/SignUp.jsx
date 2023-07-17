@@ -5,7 +5,7 @@ import "../css/styles.css";
 import houseCook from "../images/house-cook.png";
 
 
-const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5005";
+const API_URL = process.env.REACT_APP_API_URL || "https://jealous-blue-pocketbook.cyclic.app";
 
 function SignUp(props) {
   const [email, setEmail] = useState("");
