@@ -140,7 +140,7 @@ export default function MealPlan() {
                     </div>
                     <div className="buttonsContainer">
                       <Link
-                        to={`/meals/edit/${day._id}`}
+                        to={`/meals/edit/${day.id}`}
                         className="editButton"
                       >
                         <img src={editIcon} alt="" />
